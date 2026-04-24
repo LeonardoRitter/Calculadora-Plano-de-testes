@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <input type="text" id="visor" readonly>
+
+    <br><br>
+
+    <!-- Números 1 a 4 -->
+    <button onclick="clicarNumero(1)">1</button>
+    <button onclick="clicarNumero(2)">2</button>
+    <button onclick="clicarNumero(3)">3</button>
+    <button onclick="clicarNumero(4)">4</button>
+
+    <br><br>
+
+    <!-- Operações -->
+    <button onclick="definirOperacao('+')">+</button>
+    <button onclick="definirOperacao('-')">-</button>
+    <button onclick="definirOperacao('*')">x</button>
+    <button onclick="definirOperacao('/')">÷</button>
+
+
+    <button onclick="calcular()">=</button>
+    <button onclick="limpar()">C</button>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
