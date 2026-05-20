@@ -14,16 +14,14 @@ function definirOperacao(op) {
 } 
 
 function calcular() {
+    if (numeroAnterior === "" || numeroAtual === "") return;
     let resultado;
-
     let n1 = parseFloat(numeroAnterior);
     let n2 = parseFloat(numeroAtual);
-
     if (operacao === "+") resultado = n1 + n2;
     if (operacao === "-") resultado = n1 - n2;
     if (operacao === "*") resultado = n1 * n2;
     if (operacao === "/") resultado = n1 / n2;
-
     document.getElementById("visor").value = resultado;
     numeroAtual = resultado;
 }
@@ -41,4 +39,3 @@ function calcularPorcentagem() {
         document.getElementById("visor").value = numeroAtual;
     }
 }
-    
